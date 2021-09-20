@@ -20,7 +20,7 @@ public class Usuario {
     private String correo;
     private String contraseña;
     //private Progreso progreso;
-    private LocalDateTime fechaReserva = LocalDateTime.now();
+    private LocalDateTime fechaReserva;
 
     public Usuario(Integer id, String nombre, String correo, String contraseña) {
 
