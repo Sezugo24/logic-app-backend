@@ -4,7 +4,9 @@ import com.uco.logicapp.aplicacion.comando.ComandoUsuario;
 import com.uco.logicapp.aplicacion.comando.fabrica.FabricaUsuario;
 import com.uco.logicapp.dominio.modelo.entidad.Usuario;
 import com.uco.logicapp.dominio.servicio.ServicioActualizarUsuario;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ManejadorActualizarUsuario {
     private final ServicioActualizarUsuario servicioActualizarUsuario;
     private final FabricaUsuario fabricaUsuario;

@@ -1,7 +1,9 @@
 package com.uco.logicapp.dominio.puerto.repositorio;
 
-import com.uco.logicapp.dominio.modelo.dto.DtoUsuario;
+import com.uco.logicapp.dominio.modelo.dto.UsuarioDTO;
 import com.uco.logicapp.dominio.modelo.entidad.Usuario;
+
+import java.util.List;
 
 
 public interface RepositorioUsuario {
@@ -25,5 +27,11 @@ public interface RepositorioUsuario {
      * @param id
      */
     void eliminar(Integer id);
+
+    /**
+     * Permite listar toda la lista de usuarios
+     */
+
+    List<UsuarioDTO> listar();
 
 }

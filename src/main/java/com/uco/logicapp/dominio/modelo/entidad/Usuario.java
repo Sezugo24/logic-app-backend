@@ -1,4 +1,4 @@
-package com.uco.logicapp.dominio.modelo.entidad;
+ package com.uco.logicapp.dominio.modelo.entidad;
 
 import com.uco.logicapp.dominio.validar.ValidarParametro;
 import lombok.Getter;

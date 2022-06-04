@@ -1,5 +1,4 @@
 package com.uco.logicapp.dominio.modelo.dto;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -7,7 +6,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @AllArgsConstructor
-public class DtoUsuario {
+public class UsuarioDTO {
 
     private Integer id;
     private String nombre;
