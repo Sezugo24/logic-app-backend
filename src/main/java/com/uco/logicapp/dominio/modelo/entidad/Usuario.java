@@ -4,7 +4,6 @@ import com.uco.logicapp.dominio.validar.ValidarParametro;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Getter
 public class Usuario {
@@ -20,7 +19,7 @@ public class Usuario {
     private String correo;
     private String contraseña;
     //private Progreso progreso;
-    private LocalDateTime fechaReserva;
+    private LocalDateTime fechaCreacion;
 
     public Usuario(Integer id, String nombre, String correo, String contraseña) {
 
@@ -32,7 +31,7 @@ public class Usuario {
         this.nombre = nombre;
         this.correo = correo;
         this.contraseña = contraseña;
-        this.fechaReserva = fechaActual();
+        this.fechaCreacion = fechaActual();
     }
 
     public LocalDateTime fechaActual(){

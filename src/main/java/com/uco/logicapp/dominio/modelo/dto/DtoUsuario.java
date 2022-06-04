@@ -14,6 +14,6 @@ public class DtoUsuario {
     private String correo;
     private String contraseña;
     //private Progreso progreso;
-    private LocalDateTime fechaReserva;
+    private LocalDateTime fechaCreacion;
 
 }
