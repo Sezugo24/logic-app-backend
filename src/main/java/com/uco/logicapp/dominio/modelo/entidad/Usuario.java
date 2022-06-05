@@ -34,6 +34,10 @@ public class Usuario {
         this.fechaCreacion = fechaActual();
     }
 
+    public Usuario(){
+
+    }
+
     public LocalDateTime fechaActual(){
         LocalDateTime fecha = LocalDateTime.now();
         return fecha;
