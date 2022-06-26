@@ -26,7 +26,7 @@ public class ControladorUsuario {
         this.manejadorListarUsuario = manejadorListarUsuario;
     }
 
-    @PostMapping
+    @PostMapping("/crear")
     public void crearUsuario(@RequestBody ComandoUsuario comandoUsuario){
         this.manejadorCrearUsuario.ejecutar(comandoUsuario);
     }

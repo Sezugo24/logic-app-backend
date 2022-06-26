@@ -9,15 +9,15 @@ public class ComandoUsuario {
     private Integer id;
     private String nombre;
     private String correo;
-    private String contraseña;
+    private String password;
     //private Progreso progreso;
     private LocalDateTime fechaCreacion;
 
-    public ComandoUsuario(Integer id, String nombre, String correo, String contraseña) {
+    public ComandoUsuario(Integer id, String nombre, String correo, String password) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
-        this.contraseña = contraseña;
+        this.password = password;
         this.fechaCreacion = fechaActual();
     }
 
@@ -38,8 +38,8 @@ public class ComandoUsuario {
         return correo;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPassword() {
+        return password;
     }
 
     public LocalDateTime getFechaCreacion() {

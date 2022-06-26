@@ -24,17 +24,17 @@ public class EntidadUsuario {
     @Column(name = "correo")
     private String correo;
 
-    @Column(name = "contrasena")
-    private String contraseña;
+    @Column(name = "password")
+    private String password;
 
     @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion;
 
-    public EntidadUsuario(Integer id, String nombre, String correo, String contraseña, LocalDateTime fechaCreacion) {
+    public EntidadUsuario(Integer id, String nombre, String correo, String password, LocalDateTime fechaCreacion) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
-        this.contraseña = contraseña;
+        this.password = password;
         this.fechaCreacion = fechaCreacion;
     }
 
