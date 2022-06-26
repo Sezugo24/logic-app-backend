@@ -14,7 +14,7 @@ public interface RepositorioUsuario {
      * @param usuario
      * @return retorna el id del usuario creado
      */
-    Integer crear(Usuario usuario);
+    void crear(Usuario usuario);
 
     /**
      * Permite actualizar un usuario
