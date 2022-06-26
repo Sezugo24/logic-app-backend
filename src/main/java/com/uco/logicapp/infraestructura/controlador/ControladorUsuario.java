@@ -31,7 +31,7 @@ public class ControladorUsuario {
         this.manejadorCrearUsuario.ejecutar(comandoUsuario);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public List<UsuarioDTO> listarUsuario(){
         return this.manejadorListarUsuario.ejecutar();
     }

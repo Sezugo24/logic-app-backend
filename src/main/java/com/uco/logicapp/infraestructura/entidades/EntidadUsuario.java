@@ -24,10 +24,10 @@ public class EntidadUsuario {
     @Column(name = "correo")
     private String correo;
 
-    @Column(name = "contraseña")
+    @Column(name = "contrasena")
     private String contraseña;
 
-    @Column(name = "fechaCreacion")
+    @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion;
 
     public EntidadUsuario(Integer id, String nombre, String correo, String contraseña, LocalDateTime fechaCreacion) {
