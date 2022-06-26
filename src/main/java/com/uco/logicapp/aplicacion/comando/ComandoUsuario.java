@@ -3,6 +3,7 @@ package com.uco.logicapp.aplicacion.comando;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
+
 @Getter
 public class ComandoUsuario {
     private Integer id;
@@ -25,4 +26,23 @@ public class ComandoUsuario {
         return fecha;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
 }
