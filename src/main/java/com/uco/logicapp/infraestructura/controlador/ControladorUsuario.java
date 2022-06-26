@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(name = "/usuario")
+@RequestMapping(value = "/usuario")
 public class ControladorUsuario {
     private final ManejadorCrearUsuario manejadorCrearUsuario;
     private final ManejadorActualizarUsuario manejadorActualizarUsuario;
