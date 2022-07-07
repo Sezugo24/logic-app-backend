@@ -6,7 +6,6 @@ import com.uco.logicapp.aplicacion.comando.manejador.usuario.ManejadorCrearUsuar
 import com.uco.logicapp.aplicacion.comando.manejador.usuario.ManejadorEliminarUsuario;
 import com.uco.logicapp.aplicacion.consulta.ManejadorListarUsuario;
 import com.uco.logicapp.dominio.modelo.dto.UsuarioDTO;
-import com.uco.logicapp.dominio.modelo.entidad.Usuario;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,12 +35,12 @@ public class ControladorUsuario {
         return this.manejadorListarUsuario.ejecutar();
     }
 
-    @PutMapping
+    @PutMapping("/actualizar")
     public void actualizarUsuario(@RequestBody ComandoUsuario comandoUsuario){
         this.manejadorActualizarUsuario.ejecutar(comandoUsuario);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/eliminar/{id}")
     public void eliminarUsuario(@PathVariable Integer id){
         this.manejadorEliminarUsuario.ejecutar(id);
     }

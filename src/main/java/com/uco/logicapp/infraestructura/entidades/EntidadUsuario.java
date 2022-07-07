@@ -1,14 +1,8 @@
 package com.uco.logicapp.infraestructura.entidades;
 
-
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
 @Entity
 @Table(name = "usuario")
 public class EntidadUsuario {
@@ -24,21 +18,61 @@ public class EntidadUsuario {
     @Column(name = "correo")
     private String correo;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name = "clave")
+    private String clave;
 
     @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion;
 
-    public EntidadUsuario(Integer id, String nombre, String correo, String password, LocalDateTime fechaCreacion) {
+    public EntidadUsuario(Integer id, String nombre, String correo, String clave, LocalDateTime fechaCreacion) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
-        this.password = password;
+        this.clave = clave;
         this.fechaCreacion = fechaCreacion;
     }
 
     public EntidadUsuario(){
 
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
     }
 }

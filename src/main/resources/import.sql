@@ -1,0 +1,3 @@
+INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Peter',  'spidy@marvel.com',         'claveGenerica123',  NOW());
+INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Nathan', 'uncharted@nauthydog.com',  'claveGenerica456',   NOW());
+INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Master', 'halo@343.com',             'claveGenerica789',   NOW());
