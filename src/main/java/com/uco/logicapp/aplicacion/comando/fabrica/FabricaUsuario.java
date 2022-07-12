@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class FabricaUsuario {
     public Usuario crear(ComandoUsuario comandoUsuario){
-        return new Usuario(comandoUsuario.getId(),comandoUsuario.getNombre(),comandoUsuario.getCorreo(),comandoUsuario.getClave(), comandoUsuario.getFechaCreacion());
+        return new Usuario(comandoUsuario.getId(), comandoUsuario.getNombre(), comandoUsuario.getNickName(), comandoUsuario.getCorreo(),comandoUsuario.getClave(), comandoUsuario.getRol(), comandoUsuario.getFechaCreacion());
     }
 }

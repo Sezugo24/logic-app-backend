@@ -1,3 +1,1 @@
-INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Peter',  'spidy@marvel.com',         'claveGenerica123',  NOW());
-INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Nathan', 'uncharted@nauthydog.com',  'claveGenerica456',   NOW());
-INSERT INTO usuario (nombre, correo, clave, fecha_creacion) VALUES ('Master', 'halo@343.com',             'claveGenerica789',   NOW());
+INSERT INTO usuario (id, nombre, nick_name, correo, clave, rol, fecha_creacion) VALUES ('fd4baf35-cce8-4314-a073-3596a2869783', 'Drake', 'eldorado24', 'nathandrake@uncharted.com', 'claveGenerica123', 0,  NOW());
