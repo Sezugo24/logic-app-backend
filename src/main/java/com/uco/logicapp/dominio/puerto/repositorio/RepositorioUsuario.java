@@ -4,6 +4,7 @@ import com.uco.logicapp.dominio.modelo.dto.UsuarioDTO;
 import com.uco.logicapp.dominio.modelo.entidad.Usuario;
 
 import java.util.List;
+import java.util.UUID;
 
 
 public interface RepositorioUsuario {
@@ -26,7 +27,7 @@ public interface RepositorioUsuario {
      * Permite eliminar un usuario por medio del id
      * @param id
      */
-    void eliminar(Integer id);
+    void eliminar(UUID id);
 
     /**
      * Permite listar toda la lista de usuarios

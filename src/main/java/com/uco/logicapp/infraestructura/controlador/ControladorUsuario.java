@@ -9,6 +9,7 @@ import com.uco.logicapp.dominio.modelo.dto.UsuarioDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/usuario")
@@ -41,7 +42,7 @@ public class ControladorUsuario {
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public void eliminarUsuario(@PathVariable Integer id){
+    public void eliminarUsuario(@PathVariable UUID id){
         this.manejadorEliminarUsuario.ejecutar(id);
     }
 }

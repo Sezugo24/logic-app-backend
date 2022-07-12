@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Repository
 public class RepositorioUsuarioPostgres implements RepositorioUsuario {
@@ -36,7 +37,7 @@ public class RepositorioUsuarioPostgres implements RepositorioUsuario {
     }
 
     @Override
-    public void eliminar(Integer id) {
+    public void eliminar(UUID id) {
         repositorioUsuarioJPA.deleteById(id);
     }
 

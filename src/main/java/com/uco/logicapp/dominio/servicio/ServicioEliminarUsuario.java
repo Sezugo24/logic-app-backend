@@ -2,6 +2,8 @@ package com.uco.logicapp.dominio.servicio;
 
 import com.uco.logicapp.dominio.puerto.repositorio.RepositorioUsuario;
 
+import java.util.UUID;
+
 public class ServicioEliminarUsuario {
 
     private final RepositorioUsuario repositorioUsuario;
@@ -10,7 +12,7 @@ public class ServicioEliminarUsuario {
         this.repositorioUsuario = repositorioUsuario;
     }
 
-    public void ejecutar(Integer id){
+    public void ejecutar(UUID id){
         this.repositorioUsuario.eliminar(id);
     }
 
