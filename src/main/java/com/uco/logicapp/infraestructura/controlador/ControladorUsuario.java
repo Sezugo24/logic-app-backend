@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(value = "/usuario")
+@RequestMapping(value = "/usuarios")
 public class ControladorUsuario {
     private final ManejadorCrearUsuario manejadorCrearUsuario;
     private final ManejadorActualizarUsuario manejadorActualizarUsuario;

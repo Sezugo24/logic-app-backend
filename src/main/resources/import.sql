@@ -1,1 +1,1 @@
-INSERT INTO usuario (id, nombre, nick_name, correo, clave, rol, fecha_creacion) VALUES ('fd4baf35-cce8-4314-a073-3596a2869783', 'Drake', 'eldorado24', 'nathandrake@uncharted.com', 'claveGenerica123', 0,  NOW());
+INSERT INTO usuarios (id, nombre, nick_name, correo, clave, rol, fecha_creacion) VALUES ('fd4baf35-cce8-4314-a073-3596a2869783', 'Drake', 'eldorado24', 'nathandrake@uncharted.com', 'claveGenerica123', 0,  NOW());
