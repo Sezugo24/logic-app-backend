@@ -11,8 +11,7 @@ public class Usuario {
     private static final String SE_DEBE_INGRESAR_EL_NOMBRE_DE_USUARIO = "ERROR DE INFORMACION NULA EN CAMPO REQUERIDO: Se debe ingresar el nombre del usuario";
     private static final String SE_DEBE_INGRESAR_EL_CORREO_ELECTRONICO_DE_UN_USUARIO = "ERROR DE INFORMACION NULA EN CAMPO REQUERIDO: Se debe ingresar la dirección de correo electronico de un usuario";
     private static final String SE_DEBE_INGRESAR_LA_CONTRASEÑA_DE_USUARIO = "ERROR DE INFORMACION NULA EN CAMPO REQUERIDO: Se debe ingresar la respectiva password del usuario";
-    private static final String SE_DEBE_TENER_EN_CUENTA_UNA_LONGITUD_MAYOR_A = "ERROR DE INFORMACION NULA EN CAMPO REQUERIDO: Se debe tener en cuenta una longitud mayor a: %s";
-    private static final int LONGITUD_MINIMA_CLAVE = 6;
+    private static final String SE_DEBE_INGRESAR_EL_NICKNAME_DEL_USUARIO = "ERROR DE INFORMACION REQUERIDA: Se debe ingresar el correspondiente nickname del usuario";
 
     private UUID id;
     private String nombre;
@@ -27,14 +26,15 @@ public class Usuario {
         ValidarParametro.validarObligatorio(nombre, SE_DEBE_INGRESAR_EL_NOMBRE_DE_USUARIO);
         ValidarParametro.validarObligatorio(correo, SE_DEBE_INGRESAR_EL_CORREO_ELECTRONICO_DE_UN_USUARIO);
         ValidarParametro.validarObligatorio(clave, SE_DEBE_INGRESAR_LA_CONTRASEÑA_DE_USUARIO);
+        ValidarParametro.validarObligatorio(nickName, SE_DEBE_INGRESAR_EL_NICKNAME_DEL_USUARIO);
 
         this.id = id;
         this.nombre = nombre;
         this.nickName = nickName;
         this.correo = correo;
         this.clave = clave;
-        this.rol = rol;
-        this.fechaCreacion = fechaCreacion;
+        this.rol = Rol.JUGADOR;
+        this.fechaCreacion = asignarFechaActual();
     }
 
     public Usuario(){
@@ -97,4 +97,10 @@ public class Usuario {
     public void setFechaCreacion(LocalDateTime fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
+
+    public LocalDateTime asignarFechaActual(){
+        LocalDateTime fecha = LocalDateTime.now();
+        return fecha;
+    }
+
 }
